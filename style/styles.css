@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "aside main"
+    "footer footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  grid-area: header;
+  background: #004d40;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header form {
+  display: flex;
+  gap: 5px;
+}
+
+aside {
+  grid-area: aside;
+  background: #e0f2f1;
+  padding: 15px;
+}
+
+main {
+  grid-area: main;
+  padding: 15px;
+}
+
+footer {
+  grid-area: footer;
+  background: #004d40;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilo para los libros */
+.libros-destacados {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.libro {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.libro img {
+  max-width: 100%;
+  height: auto;
+}
+
+.libro h3 {
+  margin: 10px 0 5px;
+}
+
+.libro p {
+  margin: 5px 0;
+}
+
+.libro a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #26a69a;
+  color: white;
+  text-decoration: none;
+  border-radius: 3px;
+}
